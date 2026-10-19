@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ProductList from './components/ProductList'
 
 function App() {
   const [showProducts, setShowProducts] = useState(false)
@@ -20,7 +21,7 @@ function App() {
         {showProducts ? 'Hide Products' : 'Show Products'}
       </button>
 
-      {showProducts && <p>Products will be listed here.</p>}
+      {showProducts && <ProductList />}
     </div>
   )
 }
