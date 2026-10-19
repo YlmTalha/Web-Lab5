@@ -6,10 +6,11 @@ function App() {
   const [name, setName] = useState('')
 
   return (
-    <div>
+    <div style={{ maxWidth: '600px', margin: '40px auto', padding: '0 16px', fontFamily: 'Arial, sans-serif' }}>
       <h1>React Product Dashboard</h1>
 
       <input
+        style={{ padding: '6px', width: '100%', boxSizing: 'border-box' }}
         type="text"
         placeholder="Enter your name"
         value={name}
